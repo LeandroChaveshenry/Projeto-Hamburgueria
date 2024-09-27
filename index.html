@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- META TAG OG -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Dev Burguer - O melhor hamburuger dev!"/>
+    <meta property="og:image" content="https://projeto-cardapio-wine.vercel.app/assets/hamb-1.png"/>
+    <meta property="og:description" content="O melhor hamburuger caseiro de verdade!" />
+    <meta property="og:site_name" content="DevBuruger" /> 
+
+  <link rel="stylesheet" href="./styles/output.css" />
+
+  <title>Burguer 47!</title>
+</head>
+<body>
+  
+  <!-- HEADER -->
+  <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+    <div class="w-full h-full flex flex-col justify-center items-center">
+      <img 
+        src="./assets/hamb-1.png"
+        alt="Logo DevBurguer"
+        class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+      />
+      <h1 class="text-4xl mt-4 mb-2 font-bold text-white">
+        Burguer 47
+      </h1>
+
+      <span class="text-white font-medium">Rua Antonio Bicudo N°61 Santana de Parnaiba SP</span>
+
+      <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+        <span class="text-white font-medium">Seg á Dom - 18:00 as 22:00</span>
+      </div>
+
+    </div>
+  </header>
+  <!-- FIM HEADER -->
+  
+  <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+    Conheça nosso menu
+  </h2>
+
+  <!-- INICIO MENU -->
+  <div id="menu">
+
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-15 mx-auto max-w-7xl px-2 mb-16">
+
+      <!--INICIO ITEM PRODUTO-->
+
+        <div class="flex gap-2">
+
+           <img src="./assets/hamb-1.png" alt="Smash Burguer" class="w-28 -28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+
+      
+
+            <div>
+            <p class="font-bold"> Smash Burguer</p>
+            <p class="text-sm">Hambúrguer de carne bovina grelhada e "esmagada" na chapa, com queijo cheddar derretido, cebola roxa, picles e molho especial, servido em pão de brioche. Sabor intenso em cada mordida!</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+
+              <p class="font-bold text-lg">R$35,00</p>
+
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Smash Burguer" data-price="35.00">
+
+                <i class=" fa fa-cart-plus txt-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      <!--FIM ITEM PRODUTO-->
+
+      <!--INICIO ITEM PRODUTO-->
+
+      <div class="flex gap-2">
+
+        <img src="./assets/hamb-2.png" alt="Cheese Burger Duplo" class="w-28 -28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+
+   
+
+         <div>
+         <p class="font-bold"> Cheese Burger Duplo</p>
+         <p class="text-sm">Dois suculentos hambúrgueres de carne bovina, cobertos com queijo cheddar derretido, alface fresca, tomate e maionese, tudo em um pão de brioche. Perfeito para quem ama um sabor extra!</p>
+
+         <div class="flex items-center gap-2 justify-between mt-3">
+           
+           <p class="font-bold text-lg">R$35,00</p>
+
+           <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Cheese Burger Duplo" data-price="35.00">
+
+             <i class=" fa fa-cart-plus txt-lg text-white"></i>
+           </button>
+         </div>
+       </div>
+     </div>
+
+   <!--FIM ITEM PRODUTO-->
+
+           <!--INICIO ITEM PRODUTO-->
+
+           <div class="flex gap-2">
+
+            <img src="./assets/hamb-3.png" alt="Cheese Bacon" class="w-28 -28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+
+       
+
+             <div>
+             <p class="font-bold"> Cheese Bacon</p>
+             <p class="text-sm">Hambúrguer de carne bovina grelhada, coberto com queijo cheddar cremoso e fatias generosas de bacon crocante. Acompanha alface, tomate e maionese, servido em um pão de brioche. Uma combinação irresistível de sabores!</p>
+
+             <div class="flex items-center gap-2 justify-between mt-3">
+
+               <p class="font-bold text-lg">R$35,00</p>
+
+               <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Cheese Bacon" data-price="35.00">
+
+                 <i class=" fa fa-cart-plus txt-lg text-white"></i>
+               </button>
+             </div>
+           </div>
+         </div>
+
+       <!--FIM ITEM PRODUTO-->
+
+       <!--INICIO ITEM PRODUTO-->
+
+       <div class="flex gap-2">
+
+         <img src="./assets/hamb-9.png" alt="Cheese Burger" class="w-28 -28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+
+    
+
+          <div>
+          <p class="font-bold"> Cheese Burger</p>
+          <p class="text-sm">Hambúrguer de carne bovina grelhada com uma fatia de queijo cheddar derretido, acompanhado de alface, tomate e maionese, tudo em um pão de brioche. Simples e delicioso!</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            
+            <p class="font-bold text-lg">R$35,00</p>
+
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Cheese Burger" data-price="35.00">
+
+              <i class=" fa fa-cart-plus txt-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    <!--FIM ITEM PRODUTO-->
+
+             <!--INICIO ITEM PRODUTO-->
+
+             <div class="flex gap-2">
+
+              <img src="./assets/hamb-5.png" alt="Cheese Salada" class="w-28 -28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+    
+         
+    
+               <div>
+               <p class="font-bold"> Cheese Salada</p>
+               <p class="text-sm">Hambúrguer de carne bovina grelhada com queijo cheddar, servido com uma generosa porção de alface, tomate, cebola e maionese, em um pão macio. Fresco e saboroso!</p>
+    
+               <div class="flex items-center gap-2 justify-between mt-3">
+                 
+                 <p class="font-bold text-lg">R$32,00</p>
+    
+                 <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Cheese Salada" data-price="32.00">
+    
+                   <i class=" fa fa-cart-plus txt-lg text-white"></i>
+                 </button>
+               </div>
+             </div>
+           </div>
+    
+         <!--FIM ITEM PRODUTO-->
+
+                  <!--INICIO ITEM PRODUTO-->
+
+       <div class="flex gap-2">
+
+        <img src="./assets/hamb-6.png" alt="Burguer BBQ" class="w-28 -28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+
+   
+
+         <div>
+         <p class="font-bold"> Burguer BBQ </p>
+         <p class="text-sm">Hambúrguer de carne bovina com molho barbecue, cebola caramelizada, queijo muçarela, bacon crocante e picles</p>
+
+         <div class="flex items-center gap-2 justify-between mt-3">
+           
+           <p class="font-bold text-lg">R$30,00</p>
+
+           <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Burguer BBQ" data-price="30.00">
+
+             <i class=" fa fa-cart-plus txt-lg text-white"></i>
+           </button>
+         </div>
+       </div>
+     </div>
+
+   <!--FIM ITEM PRODUTO-->
+
+            <!--INICIO ITEM PRODUTO-->
+
+            <div class="flex gap-2">
+
+              <img src="./assets/hamb-7.png" alt="Veggie Burger" class="w-28 -28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+    
+         
+    
+               <div>
+               <p class="font-bold">Veggie Burger</p>
+               <p class="text-sm"> Hambúrguer à base de grão-de-bico e legumes, temperado com especiarias, servido com abacate, alface, tomate e molho tahine em um pão integral.</p>
+    
+               <div class="flex items-center gap-2 justify-between mt-3">
+                 
+                 <p class="font-bold text-lg">R$28,00</p>
+    
+                 <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Veggie Burger" data-price="28.00">
+    
+                   <i class=" fa fa-cart-plus txt-lg text-white"></i>
+                 </button>
+               </div>
+             </div>
+           </div>
+    
+         <!--FIM ITEM PRODUTO-->
+
+                  <!--INICIO ITEM PRODUTO-->
+
+       <div class="flex gap-2">
+
+        <img src="./assets/hamb-8.png" alt="Clássico Cheeseburger" class="w-28 -28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+
+   
+
+         <div>
+         <p class="font-bold">Clássico Cheeseburger</p>
+         <p class="text-sm">Hambúrguer de carne bovina grelhada, queijo cheddar derretido, alface crocante, tomate fresco e maionese especial, servido em um pão de brioche</p>
+
+         <div class="flex items-center gap-2 justify-between mt-3">
+           
+           <p class="font-bold text-lg">R$25,00</p>
+
+           <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Clássico Cheeseburger" data-price="25.00">
+
+             <i class=" fa fa-cart-plus txt-lg text-white"></i>
+           </button>
+         </div>
+       </div>
+     </div>
+
+   <!--FIM ITEM PRODUTO-->
+
+      
+    </main>
+
+    <div class="mx-auto max-w-7x1 px-2 my-2">
+      <h2 class="text-2xl font-bold md:text-4xl text-center mt-9 mb-6 ">Bebidas</h2>
+    </div>
+
+    <!--GRID BEBIDAS-->
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-15 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+<div class="flex gap-2">
+
+<img src="./assets/refri-1.png" alt="Coca Cola" class="w-28 -28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+                  
+                       
+                  
+<div>
+<p class="font-bold">Coca Cola</p>
+<p class="text-sm">Refrigerante clássico, com sabor refrescante e levemente adocicado. Perfeito para acompanhar qualquer lanche ou refeição</p>
+
+<div class="flex items-center gap-2 justify-between mt-3">
+  
+  <p class="font-bold text-lg">R$4,00</p>
+
+  <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coca Cola" data-price="4.00">
+
+    <i class=" fa fa-cart-plus txt-lg text-white"></i>
+  </button>
+</div>
+</div>
+</div>
+
+
+<div class="flex gap-2">
+
+<img src="./assets/refri-2.png" alt="Guarana" class="w-28 -28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+                    
+                         
+                    
+<div>
+  <p class="font-bold">Guarana</p>
+  <p class="text-sm">Refrigerante de sabor único, feito com extrato de guaraná, oferecendo um toque doce e refrescante. Ideal para acompanhar seus lanches e refeições</p>
+
+  <div class="flex items-center gap-2 justify-between mt-3">
+    
+    <p class="font-bold text-lg">R$4,00</p>
+
+    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Guarana" data-price="4.00">
+
+      <i class=" fa fa-cart-plus txt-lg text-white"></i>
+    </button>
+  </div>
+</div>
+</div>
+
+
+<div class="flex gap-2">
+
+<img src="./assets/refri-3.png" alt="Fanta" class="w-28 -28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+                    
+                         
+                    
+<div>
+  <p class="font-bold">Fanta</p>
+  <p class="text-sm">Refrigerante saboroso e frutado, disponível em diversas opções de sabores, ideal para acompanhamento</p>
+
+  <div class="flex items-center gap-2 justify-between mt-3">
+    
+    <p class="font-bold text-lg">R$4,00</p>
+
+    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Fanta" data-price="4.00">
+
+      <i class=" fa fa-cart-plus txt-lg text-white"></i>
+    </button>
+  </div>
+</div>
+</div>
+
+
+
+<div class="flex gap-2">
+
+<img src="./assets/refri-4.png" alt="Pepsi" class="w-28 -28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+                    
+                         
+                    
+<div>
+  <p class="font-bold">Pepsi</p>
+  <p class="text-sm">Refrigerante refrescante com sabor doce, ideal para acompanhar suas refeições!</p>
+
+  <div class="flex items-center gap-2 justify-between mt-3">
+    
+    <p class="font-bold text-lg">R$4,00</p>
+
+    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Pepsi" data-price="4.00">
+
+      <i class=" fa fa-cart-plus txt-lg text-white"></i>
+    </button>
+  </div>
+</div>
+</div>
+
+    <div class="flex gap-2">
+
+      <img src="./assets/refri-5.png" alt="Coca-Cola 2L" class="w-28 -28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+                          
+                               
+                          
+      <div>
+        <p class="font-bold">Coca-Cola 2L</p>
+        <p class="text-sm">Refrigerante clássico, com sabor refrescante e levemente adocicado. Perfeito para acompanhar qualquer lanche ou refeição</p>
+      
+        <div class="flex items-center gap-2 justify-between mt-3">
+          
+          <p class="font-bold text-lg">R$14,00</p>
+      
+          <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coca-Cola 2L" data-price="14.00">
+      
+            <i class=" fa fa-cart-plus txt-lg text-white"></i>
+          </button>
+        </div>
+      </div>
+      </div>
+
+      <div class="flex gap-2">
+
+        <img src="./assets/refri-6.png" alt="Pepsi 2L" class="w-28 -28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+                            
+                                 
+                            
+        <div>
+          <p class="font-bold">Pepsi 2L</p>
+          <p class="text-sm">Refrigerante refrescante com sabor doce, ideal para acompanhar suas refeições!</p>
+        
+          <div class="flex items-center gap-2 justify-between mt-3">
+            
+            <p class="font-bold text-lg">R$14,00</p>
+        
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Pepsi 2L" data-price="14.00">
+        
+              <i class=" fa fa-cart-plus txt-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+        </div>
+
+        <div class="flex gap-2">
+
+          <img src="./assets/refri-7.png" alt="Fanta 2L" class="w-28 -28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+                              
+                                   
+                              
+          <div>
+            <p class="font-bold">Fanta 2L</p>
+            <p class="text-sm">Refrigerante saboroso e frutado, disponível em diversas opções de sabores, ideal para acompanhamento</p>
+          
+            <div class="flex items-center gap-2 justify-between mt-3">
+              
+              <p class="font-bold text-lg">R$12,00</p>
+          
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Fanta 2L" data-price="12.00">
+          
+                <i class=" fa fa-cart-plus txt-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+          </div>
+
+          <div class="flex gap-2">
+
+            <img src="./assets/refri-8.png" alt="Coca-Cola 2L" class="w-28 -28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+                                
+                                     
+                                
+            <div>
+              <p class="font-bold">Guarana 2L</p>
+              <p class="text-sm">Refrigerante de sabor único, feito com extrato de guaraná, oferecendo um toque doce e refrescante. Ideal para acompanhar seus lanches e refeições</p>
+            
+              <div class="flex items-center gap-2 justify-between mt-3">
+                
+                <p class="font-bold text-lg">R$12,00</p>
+            
+                <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Guarana 2L" data-price="12.00">
+            
+                  <i class=" fa fa-cart-plus txt-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+            </div>
+    
+    
+          </div>
+          
+    <!--FIM GRID BEBIDAS-->
+
+    <!--INICIO SOBREMESAS-->
+
+    <div class="mx-auto max-w-7x1 px-2 my-2">
+      <h2 class="text-2xl font-bold md:text-4xl text-center mt-9 mb-6 ">Sobremesas</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-15 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+      <div class="flex gap-2">
+
+        <img src="./assets/doce-1.png" alt="Pudim 150g" class="w-28 -28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+                            
+                                 
+                            
+        <div>
+          <p class="font-bold">Pudim 150g</p>
+          <p class="text-sm">Nada melhor que um maravilhoso pudim de leite após a refeição, experimente agora.</p>
+        
+          <div class="flex items-center gap-2 justify-between mt-3">
+            
+            <p class="font-bold text-lg">R$9,80</p>
+        
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Pudim 150g" data-price="9.80">
+        
+              <i class=" fa fa-cart-plus txt-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <!--FIM SOBREMESAS-->
+
+  </div>
+  <!--FIM MENU-->
+
+   <!-- MODAL CART -->
+   <div 
+   class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+   id="cart-modal"
+ >
+
+   <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+     <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+
+     <div id="cart-items" class="flex justify-between mb-2 flex-col max-h-[400px] overflow-auto"></div>
+
+     <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+     <p class="font-bold mt-4">Endereço de entrega:</p>
+     <input 
+       type="text"
+       placeholder="Digite seu endereço completo..."
+       id="address"
+       class="w-full border-2 p-1 rounded my-1"
+     />
+     <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</p>
+
+     <div class="flex items-center justify-between mt-5 w-full">
+       <button id="close-modal-btn">Fechar</button>
+       <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+     </div>
+
+   </div>
+
+ </div>
+ <!-- FIM MODAL CART -->
+
+ <!-- BUTTON CART FOOTER -->
+ <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+   <button 
+     class="flex items-center gap-2 text-white font-bold"
+     id="cart-btn"
+   >
+     (<span id="cart-count">0</span>)
+     Veja meu carrinho
+     <i class="fa fa-cart-plus text-lg text-white"></i>
+   </button>
+ </footer>
+ <!-- FIM BUTTON CART FOOTER -->
+
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+ <script src="script.js"></script>
+</body>
+</html>
