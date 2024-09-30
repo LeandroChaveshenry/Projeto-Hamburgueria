@@ -180,12 +180,12 @@ checkoutBtn.addEventListener("click", function(){
   //Enviar o pedido para api whats
   const cartItems = cart.map((item) => {
     return (
-      ` ${item.name} Quantidade: (${item.quantity}) Preço: R$${item.price} |`
+      ` ${item.name} Quantidade: (${item.quantity}) Preço: R$${item.price} \n`
     )
   }).join("")
 
   const message = encodeURIComponent(cartItems)
-  const phone = "1511950389975"
+  const phone = "5511950389975"
 
   window.open(`https://wa.me/${phone}?text=${message} Endereço: ${addressInput.value}`, "_blank")
 
